@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム</title>
+    <link rel="icon" href="icons/favcon.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="" defer></script>
+</head>
+<body>
+    <div class="cookie">
+        <p style="display: inline-block; margin-left: 2vw;">お口にクッキーがついています。私がお取り致しましょうか？</p>
+        <div style="display: flex; gap: 2vw; align-items: center; margin-right: 2vw;;">
+            <button class="cookie-challenge ok">許可する</button>
+            <button class="cookie-challenge nok">拒否する</button>
+        </div>
+    </div>
+    <header>
+        <div class="switch-lang" style="display: flex; gap: 1vw;">
+            <a href="#"><p>JP</p></a>
+            <p>/</p>
+            <a href="#"><p>EN</p></a>
+        </div>
+        <div class="header-list">
+            <a href="#"><p>Topics</p></a>
+            <a href="#"><p>Methods</p></a>
+            <a href="#"><p>Articles</p></a>
+            <a href="#"><p>Contact</p></a>
+        </div>
+        <div class="search-box" style="display: flex; align-items:last baseline;">
+            <input type="text" id="searchInput" placeholder="search" style="border: none; padding-left: 0.5vw;">
+            <button onclick="performSearch()" style="background: transparent; border: none;"><img src="icons/search.png" style="width: 1vw; height: auto;"></button>  
+        </div>
+        <a href="#" class="menu"><img src="icons/menu_open.png"></a>
+    </header>
+    <section class="top-container">
+        <div class="msg-container" style="padding-left: 8vw; padding-top: 10vh; text-align: left;">
+            <div class="typewriter">
+                <div>
+                    <h1 class="msg1" style="letter-spacing: 0.1vw; font-size: 15vh; margin: 20vh 0 5vh;">Be</h1>
+                </div>
+            </div>
+            <div class="typewriter">
+                <div>
+                    <h1 class="msg2" style="letter-spacing: 0.1vw; font-size: 15vh; margin: 5vh 0 0; padding-bottom: 5px;">Enguisitive.</h1>
+                </div>
+            </div>
+            <div class="typewriter">
+                <div>
+                    <h1 class="msg3" style="letter-spacing: 0.1vw; font-size: 15vh; margin: 5vh 0 0;">Inquisitive.</h1>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; top: 20%; left: 50%; font-size: 3vh;">
+            <p style="font-size: 4vh;">
+                Discover a personalized set of optimized study methods.
+            </p>
+            <a href="#" style="text-decoration: none; color: black; border-radius: 4px; padding: 1vw; width: 14vw; font-weight: bold; box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);">
+                <span>1 minute test →</span>
+            </a>
+        </div>
+        <p style="position: absolute; top: 37%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5; text-align: center;">
+            Intrigued by the unknown, dive into the new world. <br>
+            Overwhelmed by its depth, but you find yourself one step forward. <br>
+            This silent exhilaration fuels persistence and resilience.
+        </p>
+        <p style="position: absolute; top: 43%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5;">
+            And...
+        </p>
+        <p style="position: absolute; top: 45%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5; text-align: center;">
+            An optimized study process maximizes your results.<br>
+            Leverage your hard work for maximum impact.
+        </p>
+        <p style="position: absolute; top: 51%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5;">
+            What keeps you motivated is you, <strong>Yourself</strong>.
+        </p>
+    </section>
+    <section class="second-container">
+        <div style="display: flex; margin: 0; padding: 0; text-align: center;">
+            <h1 style="width: 100vw; font-size: 5vh; padding: 2vh 2vh 15vh;" >3 Main Components of English</h1>
+        </div>
+        <div class="three-components">
+            <div class="component" id="grammar" style="position: relative;">
+                <p>Grammar</p>
+                <ul>
+                    <li>sentence structure</li>
+                    <li>verb tenses and aspects</li>
+                    <li>active / passive voices</li>
+                    <li>indicative, imperative</li>
+                    <li>subjunctive</li>
+                    <li>modality</li>
+                    <li>articles, determiners</li>
+                </ul>
+                <div style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); font-size: 4vh; font-weight: bold;">
+                    <span style="font-size: 8vh; color: black;">2 ~ 3</span>
+                    <div style="padding-left: 0.5vw;">months</div>
+                </div>
+                <div class="estimate">Estimated<br> Study Time</div>
+            </div>
+            <div style="height: 36vh; display: flex; align-items: center;"><p style="font-size: 3vw;">+</p></div>
+            <div class="component" id="pronunciation" style="position: relative">
+                <p>Pronunciation</p>
+                <ul style="list-style: none;">
+                    <li style="top: 35%; left: 10%;">æ</li>
+                    <li style="top: 14%; left: 70%;">iː</li>
+                    <li style="top: 13%; left: 30%;">ɒ</li>
+                    <li style="top: 45%; left: 45%;">ʌ</li>
+                    <li style="top: 75%; left: 25%;">ʊ</li>
+                    <li style="top: 49%; left: 74%;">aɪ</li>
+                    <li style="top: 78%; left: 70%;">ə</li>
+                </ul>
+                <div style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); font-size: 4vh; font-weight: bold;">
+                    <span style="font-size: 8vh; color: black;">2 ~ 3</span>
+                    <div style="padding-left: 1vw;">weeks</div> 
+                </div>
+            </div>
+            <div style="height: 36vh; display: flex; align-items: center;"><p style="font-size: 3vw;">+</p></div>
+            <div class="component" id="vocabulary" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                <p>Vocabulary</p>
+                <div style="width: 90%; height: 90%; overflow-x: hidden; position: relative;">
+                    <ul style="list-style: none;">
+                        <li style="top: 12%; left: 10%;">informative</li> 
+                        <li style="top: 22%; left: 77%;">linguistic</li>  
+                        <li style="top: 32%; left: 30%;">temporary</li>  
+                        <li style="top: 42%; left: -5%;">subjective</li>   
+                        <li style="top: 52%; left: 60%;">collision</li>  
+                        <li style="top: 62%; left: 10%;">literature</li>  
+                        <li style="top: 72%; left: 40%;">supervise</li>  
+                        <li style="top: 82%; left: 80%;">imaginary</li>
+                        <li style="top: 82%; left: -5%;">creative</li>
+                    </ul>
+                </div>
+                <div style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); margin: 0; padding: 0; font-size: 8vh; color: black;">∞</div>
+                <div style="position: absolute; top: 125%; left: 50%; transform: translateX(-50%); margin-top: 5vh; padding: 0; font-size: 4vh; font-weight: bold; text-wrap: nowrap;">endless journey...</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin: 0; padding: 0;">
+            <p style="font-size: 5vh;">So where should I start ..?</p>
+        </div>
+        <div style="position: relative; width: 100vw; height: 50vh;">
+            <div class="arrowline"></div>
+        </div>
+        <div class="graph-container">
+            <div class="detail-container">
+                <div class="detail-innercontainer">
+                    <p>
+                        This graph illustrates the relative weight of five elements 
+                        — vocabulary, grammar, pronunciation, fluency, and sociolinguistic 
+                        competence — across proficiency levels 1 to 5, indicating which areas 
+                        learners should focus on.
+                    </p>
+                    <p>
+                        For instance, learners at level 1 are advised to place emphasis on vocabulary, 
+                        grammar, and pronunciation in this order, as the diagram shows. In contrast, the 
+                        importance of fluency and sociolinguistic elements is relatively higher at a more advanced level.
+                    </p>
+                    <div style="text-align: center;"><button class="detail-close">Close</button></div>
+                </div>
+            </div>
+            <div style="width: 100%; text-align: center; position: absolute; top: -2%; left: 50%; transform: translateX(-50%); z-index: 2"><p style="font-size: 7vh; font-weight: bold; color: white;">Higgs Graph of Learner Needs</p></div>
+            <div class="graph-innercontainer">
+                <div class="img-container">
+                    <img src="images/Higgs' graph.jpg" class="higgs">
+                    <a href="https://scispace.com/pdf/the-push-toward-communication-3lyuaexh3v.pdf" style="color: white; position: absolute; top: 102%; left: 30%;">Source: 'The Push Toward Communication (1982).'</a>
+                    <button class="detail-open"><img src="icons/plus.png" style="width: 0.8vw; height: auto;"></button>
+                    <p class="detail-msg">see more</p>
+                </div>
+                <div style="width: 50%; display: flex; justify-content: left; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);">
+                    <div class="list-container">
+                        <ol>
+                            <li class="breakdown level1">
+                                <p>Vocab(45%), Gram(25%), Pron(18%), Flue(6.5%), Soci(5.5%)</p>
+                            </li>
+                            <li class="breakdown level2">
+                                <p>Gram(38%), Vocab(37.5%), Pron(10%), Flue(8%), Soci(5.5%)</p>
+                            </li>
+                            <li class="breakdown level3">
+                                <p>Gram(43%), Vocab(27%), Flue(15%), Soci(9%), Pron(6%)</p>
+                            </li>
+                            <li class="breakdown level4">
+                                <p>Gram(28%), Vocab(22%), Flue(19%), Soci(18%), Pron(12%)</p>
+                            </li>
+                            <li class="breakdown level5">
+                                <p>Each element(20%)</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-container">
+        <div style="text-align: center;"><p style="font-size: 5vh;">Here, you have <strong>3</strong> patterns of study plan.</p></div>
+        <div class="three-patterns">
+            <div class="pattern1">
+                <div style="text-align: center;"><p style="font-weight: bold;">PATTERN 1</p></div>
+                <div  class="patterns_innerbox">
+                    <div class="box vocab"></div><img src="images/arrow_edge.png" style="position: absolute; top: 33.8%; left: 87%; width: 1vw;">
+                    <div class="box gram_pron"></div><img src="images/arrow_edge.png" style="position: absolute; top: 70.8%; left: 87%; width: 1vw;">
+                </div>
+                <div style="width: 95%; height: 27%; margin: 2vh auto; border: 1px solid black;"></div>
+            </div>
+            <div class="pattern2">
+                <div style="text-align: center;"><p style="font-weight: bold;">PATTERN 2</p></div>
+                <div class="patterns_innerbox">
+                    <div class="box vocab"></div><img src="images/arrow_edge.png" style="position: absolute; top: 33.8%; left: 87%; width: 1vw;">
+                    <div class="box gram_pron2"></div><img src="images/arrow_edge.png" style="position: absolute; top: 70.8%; left: 87%; width: 1vw;">
+                </div>
+                <div style="width: 95%; height: 27%; margin: 2vh auto; border: 1px solid black;"></div>
+            </div>
+            <div class="pattern3">
+                <div style="text-align: center;"><p style="font-weight: bold;">PATTERN 3</p></div>
+                <div class="patterns_innerbox">
+                    <div class="box vocab"></div><img src="images/arrow_edge.png" style="position: absolute; top: 22.5%; left: 87%; width: 1vw;">
+                    <div class="box gram"></div><img src="images/arrow_edge.png" style="position: absolute; top: 48.8%; left: 87%; width: 1vw;">
+                    <div class="box pron"></div><img src="images/arrow_edge.png" style="position: absolute; top: 74%; left: 87%; width: 1vw;">
+                </div>
+                <div style="width: 95%; height: 27%; margin: 2vh auto; border: 1px solid black;"></div>
+            </div>
+        </div>
+        <div style="text-align: center;"><p>Once your study plan is clear, let's put it into action!</p></div>
+        <div style="position: relative; width: 100vw; height: 50vh;">
+            <div class="arrowline"></div>
+        </div>
+        <div style="text-align: center;"><p>Below, study methods are arranged in a table according to 4 skills: R (reading), L (Listening), W (Writing), S (Speaking).</p></div>
+        <div style="position: relative; width: 100vw; height: 50vh;">
+            <div class="arrowline"></div>
+        </div>        
+        <div style=" width: 100%; display: flex; justify-content: center;">
+            <div class="grid-container">
+                <div class="grid1-2">R</div>
+                <div class="grid1-3">L</div>
+                <div class="grid1-4">W</div>
+                <div class="grid1-5">S</div>
+                <div class="grid2-1">Vocabulary</div>
+                <div class="grid2-2"></div>
+                <div class="grid2-3"></div>
+                <div class="grid2-4"></div>
+                <div class="grid2-5"></div>
+                <div class="grid3-1">Grammar</div>
+                <div class="grid3-2"></div>
+                <div class="grid3-3"></div>
+                <div class="grid3-4"></div>
+                <div class="grid3-5"></div>
+                <div class="grid4-1">Pronunciation</div>
+                <div class="grid4-2"></div>
+                <div class="grid4-3"></div>
+                <div class="grid4-4"></div>
+                <div class="grid4-5"></div>
+            </div>
+        </div>
+        <div style="text-align: center; margin: 30vh 0;"><p style="font-size: 4vh;">Now, you're all set!! Try any study method that suits you.</p></div>
+    </section>
+
+    <section class="fourth-container">
+        <div><p class="fourth-title">Mastering 4 Skills with the Correct Approach</p></div>
+        <div class="flex-container">
+            <div class="flex-box Reading">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold;">Reading</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/reading.png">
+                </div>
+                <div><p>Learn more →</p></div>
+            </div>
+            <div class="flex-box Listening">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold;">Listening</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/Listening.png">
+                </div>
+                <div><p>Learn more →</p></div>
+            </div>
+            <div class="flex-box Writing">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold;">Writing</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/writing.png">
+                </div>
+                <div><p>Learn more →</p></div>
+            </div>
+            <div class="flex-box Speaking">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold;">Speaking</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/speaking.png">
+                </div>
+                <div><p>Learn more →</p></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    
+const hideMsg  = () => {
+    const msg3 = document.querySelector('.msg3');
+    msg3.classList.add('hidden');
+
+    setTimeout(() => {
+        msg3.classList.remove('hidden');
+    }, 1200);
+
+    setTimeout(() => {
+        msg3.classList.add('hidden');
+    }, 3300);
+        
+    const msg2 = document.querySelector('.msg2');
+    msg2.classList.add('hidden');
+
+    setTimeout(() => {
+        msg2.classList.remove('hidden');
+    }, 3400);
+
+};
+
+const cookieChallenge = () => {
+    const cookie = document.querySelector('.cookie');
+    const cookieBtn = document.querySelectorAll('.cookie-challenge');
+    
+    cookie.classList.add('show');
+    
+    cookieBtn.forEach(x => {
+        x.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        cookie.classList.remove('show');
+    });
+    });
+}
+
+const detailContainer = document.querySelector('.detail-container');
+const detailOpen = document.querySelector('.detail-open');
+const detailClose = document.querySelector('.detail-close');
+
+detailOpen.addEventListener('click', (e) => {
+    e.preventDefault();
+    detailContainer.classList.add('show');
+});
+
+detailClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    detailContainer.classList.remove('show');
+});
+
+window.addEventListener('load', () => {
+    hideMsg();
+    // cookieChallenge();
+
+});
+</script>
+</html>
