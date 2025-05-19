@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム</title>
+    <link rel="icon" href="icons/favcon.png" type="image/png">
+    <link rel="stylesheet" href="index.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="" defer></script>
+</head>
+<body>
+    <div class="cookie">
+        <p style="display: inline-block; margin-left: 2vw;">お口にクッキーがついています。私がお取り致しましょうか？</p>
+        <div style="display: flex; gap: 2vw; align-items: center; margin-right: 2vw;;">
+            <button class="cookie-challenge ok">許可する</button>
+            <button class="cookie-challenge nok">拒否する</button>
+        </div>
+    </div>
+    <header>
+        <div class="switch-lang" style="display: flex; gap: 1vw;">
+            <a href="http://enguisitive.monster/index.html" id="jap" style="pointer-events: none;"><p style="color: lightgrey;">JP</p></a>
+            <p>/</p>
+            <a href="http://enguisitive.monster/index-en.html" id="eng" style="pointer-events: auto;"><p style="color: black;">EN</p></a>
+        </div>
+        <div class="header-list">
+            <a href="#"><p>Topics</p></a>
+            <a href="#"><p>Methods</p></a>
+            <a href="#"><p>Articles</p></a>
+            <a href="#"><p>Contact</p></a>
+        </div>
+        <div class="search-box" style="display: flex; align-items:last baseline;">
+            <input type="text" id="searchInput" placeholder="search" style="border: none; padding-left: 0.5vw;">
+            <button onclick="performSearch()" style="background: transparent; border: none;"><img src="icons/search.png" style="width: 1vw; height: auto;"></button>  
+        </div>
+        <a href="#" class="menu"><img src="icons/menu_open.png"></a>
+    </header>
+    <section class="top-container">
+        <div class="msg-container" style="padding-left: 8vw; padding-top: 10vh; text-align: left;">
+            <div class="typewriter">
+                <div>
+                    <h1 class="msg1" style="letter-spacing: 0.1vw; font-size: 15vh; margin: 20vh 0 5vh;">Be</h1>
+                </div>
+            </div>
+            <div class="typewriter">
+                <div>
+                    <h1 class="msg2" style="letter-spacing: 0.1vw; font-size: 15vh; margin: 5vh 0 0; padding-bottom: 5px;">Enguisitive.</h1>
+                </div>
+            </div>
+            <div class="typewriter">
+                <div>
+                    <h1 class="msg3" style="letter-spacing: 0.1vw; font-size: 15vh; margin: 5vh 0 0;">Inquisitive.</h1>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; top: 20%; left: 50%; font-size: 3vh;">
+            <p style="font-size: 4vh;">
+                自分に合った最適な勉強方法を見つける
+            </p>
+            <a href="#" style="text-decoration: none; color: black; border-radius: 4px; padding: 1vw; width: 14vw; font-weight: bold; box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);">
+                <span>1分で診断 →</span>
+            </a>
+        </div>
+        <p style="position: absolute; top: 37%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5; text-align: center;">
+            Intrigued by the unknown, dive into the new world. <br>
+            Overwhelmed by its depth, but you find yourself one step forward. <br>
+            This silent exhilaration fuels persistence and resilience.
+        </p>
+        <p style="position: absolute; top: 43%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5;">
+            And...
+        </p>
+        <p style="position: absolute; top: 45%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5; text-align: center;">
+            An optimized study process maximizes your results.<br>
+            Leverage your hard work for maximum impact.
+        </p>
+        <p style="position: absolute; top: 51%; left: 50%; transform: translateX(-50%); font-size: 3vh; line-height: 1.5;">
+            What keeps you motivated is you, <strong>Yourself</strong>.
+        </p>
+    </section>
+    <section class="second-container">
+        <div style="display: flex; margin: 0; padding: 0; text-align: center;">
+            <h1 style="width: 100vw; font-size: 5vh; padding: 2vh 2vh 15vh;" >英語は3つの要素からなる</h1>
+        </div>
+        <div class="three-components">
+            <div class="component" id="grammar" style="position: relative;">
+                <p>文法</p>
+                <ul>
+                    <li>語順</li>
+                    <li>現在形、過去形、現在進行形、現在完了</li>
+                    <li>能動態、受動態</li>
+                    <li>命令形</li>
+                    <li>仮定法</li>
+                    <li>助動詞</li>
+                    <li>定冠詞、不定冠詞</li>
+                </ul>
+                <div style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); font-size: 4vh; font-weight: bold;">
+                    <span style="font-size: 8vh; color: black;">2 ~ 3</span>
+                    <div style="text-align: center;"><div>ヵ月</div></div>
+                </div>
+                <div class="estimate">推定学習時間</div>
+            </div>
+            <div style="height: 36vh; display: flex; align-items: center;"><p style="font-size: 3vw;">+</p></div>
+            <div class="component" id="pronunciation" style="position: relative">
+                <p>発音</p>
+                <ul class="ipa-symbols" style="list-style: none;">
+                    <li style="top: 35%; left: 10%;">æ</li>
+                    <li style="top: 14%; left: 70%;">iː</li>
+                    <li style="top: 13%; left: 30%;">ɒ</li>
+                    <li style="top: 45%; left: 45%;">ʌ</li>
+                    <li style="top: 75%; left: 25%;">ʊ</li>
+                    <li style="top: 49%; left: 74%;">aɪ</li>
+                    <li style="top: 78%; left: 70%;">ə</li>
+                </ul>
+                <div style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); font-size: 4vh; font-weight: bold;">
+                    <span style="font-size: 8vh; color: black;">2 ~ 3</span>
+                    <div style="text-align: center;"><div>週間</div></div>
+                </div>
+            </div>
+            <div style="height: 36vh; display: flex; align-items: center;"><p style="font-size: 3vw;">+</p></div>
+            <div class="component" id="vocabulary" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                <p>語彙</p>
+                <div style="width: 90%; height: 90%; overflow-x: hidden; position: relative;">
+                    <ul class="vocab-words" style="list-style: none;">
+                        <li style="top: 12%; left: 10%;">informative</li> 
+                        <li style="top: 22%; left: 77%;">linguistic</li>  
+                        <li style="top: 32%; left: 30%;">temporary</li>  
+                        <li style="top: 42%; left: -5%;">subjective</li>   
+                        <li style="top: 52%; left: 60%;">collision</li>  
+                        <li style="top: 62%; left: 10%;">literature</li>  
+                        <li style="top: 72%; left: 40%;">supervise</li>  
+                        <li style="top: 82%; left: 80%;">imaginary</li>
+                        <li style="top: 82%; left: -5%;">creative</li>
+                    </ul>
+                </div>
+                <div style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); margin: 0; padding: 0; font-size: 8vh; color: black;">∞</div>
+                <div style="position: absolute; top: 125%; left: 50%; transform: translateX(-50%); margin-top: 5vh; padding: 0; font-size: 4vh; font-weight: bold; text-wrap: nowrap; font-family: 'Cormorant Garamond';">endless journey...</div>
+            </div>
+        </div>
+        <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;">
+            <div style="width: 100%; text-align: center; padding: 0; position: absolute; z-index: 5;">
+                <p style="font-size: 4vh; background-color: white; padding: 2vh;">何から手をつけたらよいか分からない..</p>
+            </div>
+            <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; position: absolute; z-index: 3;">
+                <div class="arrowline"></div>
+            </div>
+        </div>
+        <div class="graph-container">
+            <div class="detail-container">
+                <div class="detail-innercontainer">
+                    <p>
+                        このグラフは、語彙、文法、発音、流暢さ、社会言語学的な能力の5つの要素について、レベル1（初学者）からレベル5（上級者）までの
+                        学習者が英語を勉強する際に、どの要素により優先順位を置くべきかを示しています。
+                    </p>
+                    <p>
+                        例えば、このグラフが示すように、レベル1の学習者は、5つの要素のうち、語彙、文法、発音の順で優先して勉強することが推奨されている。
+                        一方で、上級者になるほど流暢さや社会言語学的な要素が他の要素に比べて重要となってくる。
+                    </p>
+                    <div style="text-align: center;"><button class="detail-close">閉じる</button></div>
+                </div>
+            </div>
+            <div style="width: 100%; text-align: center; position: absolute; top: -2%; left: 50%; transform: translateX(-50%); z-index: 2"><p style="font-size: 7vh; font-weight: bold; color: white; font-family: 'Cormorant Garamond';">Higgs Graph of Learner Needs</p></div>
+            <div class="graph-innercontainer">
+                <div class="img-container">
+                    <img src="images/Higgs' graph.jpg" class="higgs">
+                    <a href="https://scispace.com/pdf/the-push-toward-communication-3lyuaexh3v.pdf" style="color: white; position: absolute; top: 102%; left: 30%; font-family: 'Cormorant Garamond';">Source: 'The Push Toward Communication (1982).'</a>
+                    <button class="detail-open"><img src="icons/plus.png" style="width: 0.8vw; height: auto;"></button>
+                    <p class="detail-msg">説明を見る</p>
+                </div>
+                <div style="width: 50%; display: flex; justify-content: left; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);">
+                    <div class="list-container">
+                        <ol>
+                            <li class="breakdown level1">
+                                <p>語彙(45%), 文法(25%), 発音(18%), 流暢さ(6.5%), 社会言語学(5.5%)</p>
+                            </li>
+                            <li class="breakdown level2">
+                                <p>文法(38%), 語彙(37.5%), 発音(10%), 流暢さ(8%), 社会言語学(5.5%)</p>
+                            </li>
+                            <li class="breakdown level3">
+                                <p>文法(43%), 語彙(27%), 流暢さ(15%), 社会言語学(9%), 発音(6%)</p>
+                            </li>
+                            <li class="breakdown level4">
+                                <p>文法(28%), 語彙(22%), 流暢さ(19%), 社会言語学(18%), 発音(12%)</p>
+                            </li>
+                            <li class="breakdown level5">
+                                <p>各要素(20%)</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-container">
+        <div style="position: relative; width: 100vw; height: 50vh;">
+            <div class="arrowline2"></div>
+        </div>
+        <div style="text-align: center; margin: 0;"><p style="font-size: 4vh;"><strong>3</strong> パターンの英語学習計画</p></div>
+        <div class="three-patterns">
+            <div class="pattern1">
+                <div style="text-align: center;"><p style="font-weight: bold; font-family: 'Cormorant Garamond';">PATTERN 1</p></div>
+                <div  class="patterns_innerbox">
+                    <div class="box vocab"></div><img src="images/arrow_edge.png" style="position: absolute; top: 31.5%; left: 87%; width: 1vw;">
+                    <div class="box gram_pron"></div><img src="images/arrow_edge.png" style="position: absolute; top: 67.5%; left: 87%; width: 1vw;">
+                </div>
+                <div class ="pattern-annotation">
+                    <p style="margin: 0;">語彙の習得を行いながら、 先に文法を学び, その後発音を学ぶ。</p>
+                    <p>このような方におすすめ...</p>
+                    <ul>
+                        <li>先にリーディングとライティングの学習を進めたい</li>
+                        <li>英語の文章を読めるようになりたい</li>
+                        <li>英語で文章を書けるようになりたい</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pattern2">
+                <div style="text-align: center;"><p style="font-weight: bold; font-family: 'Cormorant Garamond';">PATTERN 2</p></div>
+                <div class="patterns_innerbox">
+                    <div class="box vocab"></div><img src="images/arrow_edge.png" style="position: absolute; top: 31.5%; left: 87%; width: 1vw;">
+                    <div class="box gram_pron2"></div><img src="images/arrow_edge.png" style="position: absolute; top: 67.5%; left: 87%; width: 1vw;">
+                </div>
+                <div class ="pattern-annotation">
+                    <p style="margin: 0;">語彙の習得を行いながら、 先に発音を学び, その後文法を学ぶ。</p>
+                    <p>このような方におすすめ...</p>
+                    <ul>
+                        <li>先にリスニングとスピーキングの学習を進めたい</li>
+                        <li>字幕なしで海外の映画を観たい</li>
+                        <li>洋楽の歌詞を理解できるになりたい</li>
+                        <li>外国人の友達が欲しい</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pattern3">
+                <div style="text-align: center;"><p style="font-weight: bold; font-family: 'Cormorant Garamond';">PATTERN 3</p></div>
+                <div class="patterns_innerbox">
+                    <div class="box vocab"></div><img src="images/arrow_edge.png" style="position: absolute; top: 21.5%; left: 87%; width: 1vw;">
+                    <div class="box gram"></div><img src="images/arrow_edge.png" style="position: absolute; top: 46%; left: 87%; width: 1vw;">
+                    <div class="box pron"></div><img src="images/arrow_edge.png" style="position: absolute; top: 71%; left: 87%; width: 1vw;">
+                </div>
+                <div class ="pattern-annotation">
+                    <p style="margin: 0;">文法、発音、語彙を同時に学ぶ。</p>
+                    <p>このような方におすすめ...</p>
+                    <ul>
+                        <li>勉強に十分な時間を取れる</li>
+                        <li>4技能全てを速いスピードで習得したい</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;"><p style="font-size: 4vh; margin: 20vh 0 0; padding: 0;">勉強計画が決まれば、次は実践してみよう！</p></div>
+        <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;">
+            <div style="width: 100%; text-align: center; padding: 0; position: absolute; z-index: 5;">
+                <p style="font-size: 4vh; background: white; padding: 2vh;">
+                    語彙、文法は、読んで、聴いて、書いて、話して学ぶ！ <br>
+                    発音は、仕組みを理解して、実践を通して学ぶ！<br>
+                    ※ <span class="en">R</span> (リーディング), <span class="en">L</span> (リスニング), <span class="en">W</span> (ライティング), <span class="en">S</span> (スピーキング)
+                </p>
+            </div>
+            <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; position: absolute; z-index: 3;">
+                <div class="arrowline"></div>
+            </div>
+        </div>
+        <div style=" width: 100%; display: flex; justify-content: center; margin-top: 10vh;">
+            <div class="grid-container">
+                <div class="grid1-2">R</div>
+                <div class="grid1-3">L</div>
+                <div class="grid1-4">W</div>
+                <div class="grid1-5">S</div>
+                <div class="grid2-1">語彙</div>
+                <div class="grid2-2">
+                    <ul>
+                        <li>サイレント・リーディング</li>
+                        <li>多読</li>
+                        <li>アイ・シャドーイング</li>
+                        <li>音読</li>
+                        <li>リップ・シンク</li>
+                        <li>マンブリング</li>
+                        <li>オーバーラッピング</li>
+                        <li>ルックアップ＆セイ</li>
+                    </ul>
+                </div>
+                <div class="grid2-3">
+                    <ul>
+                        <li>ディクトグロス</li>
+                        <li>アイ・シャドーイング</li>
+                        <li>ディクテーション</li>
+                        <li>多読</li>
+                        <li>リテンション</li>
+                        <li>リプロダクション</li>
+                        <li>リフレージング</li>
+                        <li>サマライジング</li>
+                        <li>シャドーイング</li>
+                        <li>リピーティング</li>
+                        <li>リップ・シンク</li>
+                        <li>マンブリング</li>
+                        <li>オーバーラッピング</li>
+                    </ul>
+                </div>
+                <div class="grid2-4">
+                    <ul>
+                        <li>コピー（書き写し）</li>
+                        <li>ディクトグロス</li>
+                        <li>ディクテーション</li>
+                        <li>作文、ジャーナリング</li>
+                    </ul>
+                </div>
+                <div class="grid2-5">
+                    <ul>
+                        <li>音読</li>
+                        <li>リサイテーション</li>
+                        <li>リテンション</li>
+                        <li>リプロダクション</li>
+                        <li>リフレージング</li>
+                        <li>サマライジング</li>
+                        <li>シャドーイング</li>
+                        <li>リピーティング</li>
+                        <li>マンブリング</li>
+                        <li>オーバーラッピング</li>
+                        <li>ルックアップ＆セイ</li>
+                    </ul>
+                </div>
+                <div class="grid3-1">文法</div>
+                <div class="grid3-2">
+                    <ul>
+                        <li>音読</li>
+                        <li>スラッシュ・リーディング</li>
+                        <li>リピーティング(開本)</li>
+                        <li>ルックアップ＆セイ</li>
+                    </ul>
+                </div>
+                <div class="grid3-3">
+                    <ul>
+                        <li>リピーティング（閉本）</li>
+                    </ul>
+                </div>
+                <div class="grid3-4">
+                    <ul>
+                        <li>コピー（書き写し）</li>
+                        <li>作文、ジャーナリング</li>
+                    </ul>
+                </div>
+                <div class="grid3-5">
+                    <ul>
+                        <li>リピーティング</li>
+                        <li>ルックアップ＆セイ</li>
+                        <li>リサイテーション</li>
+                    </ul>
+                </div>
+                <div class="grid4-1">発音</div>
+                <div class="grid4-2">
+                    <ul>
+                        <li><span class="en">IPA</span> (国際音声記号)</li>
+                        <li>強形、弱形</li>
+                        <li>強勢</li>
+                        <li>リズム</li>
+                        <li>抑揚</li>
+                        <li>リンキング, 脱落, 同化</li>
+                    </ul>
+                    <p style="text-wrap: nowrap; position: absolute; top: 35%; left: 70%;">実践してみよう！</p>
+                    <div style=" display: flex; justify-content: center; align-items: center; position: absolute; left: 94%; top: 50%; transform: translateY(-50%);">
+                        <img src="images/arrow2.png" style="width: 5vw; height: auto;">
+                    </div>       
+                </div>
+                <div class="grid4-5">
+                    <ul>
+                        <li>リスニング</li>
+                        <li>アイ・シャドーイング</li>
+                        <li>リピーティング</li>
+                        <li>音読</li>
+                        <li>リップ・シンク</li>
+                        <li>マンブリング</li>
+                        <li>オーバーラッピング</li>
+                        <li>シャドーイング</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin: 30vh 0;"><p style="font-size: 4vh;">さあ、準備は整った。 自分に合った勉強法を実践してみよう！！</p></div>
+    </section>
+
+    <section class="fourth-container">
+        <div><p class="fourth-title">英語4技能の勉強法</p></div>
+        <div class="flex-container">
+            <div class="flex-box Reading">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold; font-family: 'Cormorant Garamond';">Reading</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/reading.png">
+                </div>
+                <a href="#" style="text-decoration: none;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <p style="color: black; font-size: 2.5vh;">詳しく見る</p>
+                        <img src="images/arrow2.png" style="width: 2vw; height: 2vh; margin-right: 0.5vw;">
+                    </div>
+                </a>
+            </div>
+            <div class="flex-box Listening">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold; font-family: 'Cormorant Garamond';">Listening</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/Listening.png">
+                </div>
+                <a href="#" style="text-decoration: none;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <p style="color: black; font-size: 2.5vh;">詳しく見る</p>
+                        <img src="images/arrow2.png" style="width: 2vw; height: 2vh; margin-right: 0.5vw;">
+                    </div>
+                </a>
+            </div>
+            <div class="flex-box Writing">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold; font-family: 'Cormorant Garamond';">Writing</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/writing.png">
+                </div>
+                <a href="#" style="text-decoration: none;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <p style="color: black; font-size: 2.5vh;">詳しく見る</p>
+                        <img src="images/arrow2.png" style="width: 2vw; height: 2vh; margin-right: 0.5vw;">
+                    </div>
+                </a>
+            </div>
+            <div class="flex-box Speaking">
+                <p style="border-left: 2px solid #6c63ff; font-weight: bold; font-family: 'Cormorant Garamond';">Speaking</p>
+                <div class="flex-innerbox"> 
+                    <img src="images/speaking.png">
+                </div>
+                <a href="#" style="text-decoration: none;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <p style="color: black; font-size: 2.5vh;">詳しく見る</p>
+                        <img src="images/arrow2.png" style="width: 2vw; height: 2vh; margin-right: 0.5vw;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    
+const hideMsg  = () => {
+    const msg3 = document.querySelector('.msg3');
+    msg3.classList.add('hidden');
+
+    setTimeout(() => {
+        msg3.classList.remove('hidden');
+    }, 1200);
+
+    setTimeout(() => {
+        msg3.classList.add('hidden');
+    }, 3300);
+        
+    const msg2 = document.querySelector('.msg2');
+    msg2.classList.add('hidden');
+
+    setTimeout(() => {
+        msg2.classList.remove('hidden');
+    }, 3400);
+
+};
+
+const cookieChallenge = () => {
+    const cookie = document.querySelector('.cookie');
+    const cookieBtn = document.querySelectorAll('.cookie-challenge');
+    
+    cookie.classList.add('show');
+    
+    cookieBtn.forEach(x => {
+        x.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        cookie.classList.remove('show');
+    });
+    });
+}
+
+const detailContainer = document.querySelector('.detail-container');
+const detailOpen = document.querySelector('.detail-open');
+const detailClose = document.querySelector('.detail-close');
+
+detailOpen.addEventListener('click', (e) => {
+    e.preventDefault();
+    detailContainer.classList.add('show');
+});
+
+detailClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    detailContainer.classList.remove('show');
+});
+
+const jap = document.querySelector('#jap');
+const japP = document.querySelector('#jap p');
+const eng = document.querySelector('#eng');
+const engP = document.querySelector('#eng p');
+
+window.addEventListener('DOMContentLoaded', () => {
+  const currentPath = window.location.pathname;
+  const japPath = new URL(jap.href).pathname;
+  const engPath = new URL(eng.href).pathname;
+
+  if (currentPath === japPath) {
+    jap.style.pointerEvents = 'none';
+    japP.style.color = 'lightgrey';
+    eng.style.pointerEvents = 'auto';
+    engP.style.color = 'black';
+  } else if (currentPath === engPath) {
+    eng.style.pointerEvents = 'none';
+    engP.style.color = 'lightgrey';
+    jap.style.pointerEvents = 'auto';
+    japP.style.color = 'black';
+  }
+});
+
+
+jap.addEventListener('click', (e) => {
+  const currentPath = window.location.pathname;
+  const targetPath = new URL(jap.href).pathname;
+
+  if (currentPath === targetPath) {
+    e.preventDefault();
+  }
+});
+
+eng.addEventListener('click', (e) => {
+  const currentPath = window.location.pathname;
+  const targetPath = new URL(eng.href).pathname;
+
+  if (currentPath === targetPath) {
+    e.preventDefault();
+  }
+});
+
+
+window.addEventListener('load', () => {
+    hideMsg();
+    // cookieChallenge();
+
+});
+</script>
+</html>
